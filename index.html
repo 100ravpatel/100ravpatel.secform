@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>www.100ravpatel.co.in</title>
+   <link rel="stylesheet" href="loginform.css"></link>
+   
+</head>
+<body background="form.jpg">
+    <div class="firstdiv">
+        <div class ="form-box">
+           <div class="button-box">
+                <div id="btn1"> </div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+           </div>
+                     <div class="myhandel" id="linkedin">
+                              <a href="https://www.linkedin.com/in/100ravpatel/" target="-blank">
+                                  <img src="linkedin.png">
+                                    </a>
+                     </div>
+                    <div class="myhandel"id="face">
+                              <a href="https://www.facebook.com/100ravpatel" target="-blank">
+                                    <img src="fb.png">
+                             </a>
+                     </div>
+                   <div class="myhandel"id="git">
+                             <a href="https://github.com/100ravpatel" target="-blank">
+                                     <img src="git1.png">
+                            </a>
+                          </div>  
+                  <form id="login"class="finput1">
+                        <input type="text" class="iinput2" placeholder="User id" required></input>
+                        <input type="password" class="iinput2" placeholder="Password" required></input>
+                        <input type="checkbox"class="cbox" required><i>Remember Password<i></input>
+                           <a href="welcome.html">
+                                 <button type="button" class="sbtn">Log in</button>
+                           </a>    
+                  </form>
+                  <form id="register"class="finput1">
+                        <input type="text" class="iinput2" placeholder="User id" required></input>
+                       <input type="email" class="iinput2" placeholder="Mail id" required></input>
+                       <input type="password" class="iinput2" placeholder="Password" required></input>
+                       <input type="checkbox"class="cbox" required><i> I agree.....<i></input>
+                        <a href="register.html">
+                       <button type="button" class="sbtn">Register</button>
+                     </a>
+                 </form>
+         </div>
+    </div>
+    <script>
+       var a = document.getElementById("login");
+       var b = document.getElementById("register");
+       var c = document.getElementById("btn1");
+        
+        function register(){
+           a.style.left="-400px";
+           b.style.left="455px";
+           b.style.top="4px";
+           c.style.left="110px";
+        }
+        function login(){
+           a.style.left="50px";
+           b.style.left="450px";
+           c.style.left="0";
+        }
+    </script>
+</body>
+
+</html>
